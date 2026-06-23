@@ -1,0 +1,48 @@
+{
+	"info": {
+		"name": "Laravel Menu API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Menu Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/menu",
+					"protocol": "http",
+					"host": ["127", "0", "0", "1"],
+					"port": "8000",
+					"path": ["api", "menu"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Menu Item",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Pizza Margarita\",\n    \"description\": \"Classic pizza with tomatoes and mozzarella\",\n    \"price\": 185.50\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/menu",
+					"protocol": "http",
+					"host": ["127", "0", "0", "1"],
+					"port": "8000",
+					"path": ["api", "menu"]
+				}
+			},
+			"response": []
+		}
+	]
+}
